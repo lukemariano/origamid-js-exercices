@@ -15,8 +15,8 @@ const lucas = {
 //console.log(lucas.walk(40));
 
 // Crie um método no objeto anterior, que mostre o seu nome completo
-lucas.fullName = () =>{
-    return `${lucas.firstName} ${lucas.lastName}`
+lucas.fullName = function(){
+    return `${this.firstName} ${this.lastName}`
 }
 
 //console.log(lucas.fullName());
@@ -46,4 +46,4 @@ const dog = {
     }
 }
 
-console.log(dog.yap());
+//console.log(dog.yap());
